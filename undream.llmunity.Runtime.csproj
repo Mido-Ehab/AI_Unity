@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{660D8FFB-2C76-C1C6-A6B2-39E73A02A5F1}</ProjectGuid>
+    <ProjectGuid>{5C8FD4A7-B0B2-AF15-7063-304A5908DFE7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>undream.llmunity.Runtime</AssemblyName>
@@ -1122,7 +1122,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Cloud.Unum.USearch.csproj">
-      <Project>{D052AD14-F328-D4C8-F4DB-B4AD0CF24D6E}</Project>
+      <Project>{C81CDD8B-C5BD-EF1E-944E-2726817AD54C}</Project>
       <Name>Cloud.Unum.USearch</Name>
     </ProjectReference>
   </ItemGroup>

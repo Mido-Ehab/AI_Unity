@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{D052AD14-F328-D4C8-F4DB-B4AD0CF24D6E}</ProjectGuid>
+    <ProjectGuid>{C81CDD8B-C5BD-EF1E-944E-2726817AD54C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Cloud.Unum.USearch</AssemblyName>

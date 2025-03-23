@@ -7,32 +7,48 @@ public class AI_actions : MonoBehaviour
 {
     public LLMCharacter llmCharacter;
     public TMP_InputField playerText;
-    public GameObject Wolf;
-    public GameObject Wolf2;
+    public GameObject player; // Assign Player GameObject
+    public GameObject target1; // Assign potential Target 1
+    public GameObject target2; // Assign potential Target 2
+    private GameObject currentTarget; // Holds the selected target
 
     void Start()
     {
         playerText.onSubmit.AddListener(onInputFieldSubmit);
         playerText.Select();
+        currentTarget = target2; // Default target
     }
 
     string ConstructActionPrompt(string message)
     {
         string actions = "Shoot, Shield";
-        string colors = "BlueColor, RedColor";
+        string targets = "Enemy1, Enemy2"; // Define possible targets
 
-        return $@"Analyze this command: ""{message}""
-        Extract the action and color mentioned.
+        return $@"You are an AI assistant that extracts commands from user input.
+    
+    User command: ""{message}""
 
-        Available actions: {actions}
-        Available colors: {colors}
+    Your task:
+    - Identify the action from this list: {actions}
+    - Identify the target from this list: {targets}
 
-        Respond in this exact format:
-        Action: [ActionName]
-        Color: [ColorName]
+    If the command does not mention an action, respond with:
+    Action: NoActionMentioned
 
-        If no action or color is mentioned, use NoActionMentioned or NoColorMentioned respectively.";
+    If the command does not mention a target, respond with:
+    Target: NoTargetMentioned
+
+    Always respond in this exact format:
+    Action: [ActionName]
+    Target: [TargetName]
+    
+    Example:
+    User: ""Use shield now!""
+    Response:
+    Action: Shield
+    Target: NoTargetMentioned";
     }
+
 
     async void onInputFieldSubmit(string message)
     {
@@ -45,28 +61,29 @@ public class AI_actions : MonoBehaviour
 
             string[] lines = response.Split('\n');
             string action = lines[0].Replace("Action: ", "").Trim();
-            string color = lines[1].Replace("Color: ", "").Trim();
+            string target = lines[1].Replace("Target: ", "").Trim();
 
-            GameObject selectedCharacter = GetCharacterByColor(color);
-            GameObject opponent = (selectedCharacter == Wolf) ? Wolf2 : Wolf;
+            currentTarget = GetTargetByName(target);
 
-            if (selectedCharacter != null)
+            if (player != null && currentTarget != null)
             {
-                Animator animator = selectedCharacter.GetComponent<Animator>();
-                EnemyAI enemyAI = selectedCharacter.GetComponent<EnemyAI>(); // Get EnemyAI script
+                PlayerAI playerAI = player.GetComponent<PlayerAI>();
 
-                if (animator != null && enemyAI != null)
+                if (playerAI != null)
                 {
-                    selectedCharacter.transform.LookAt(opponent.transform); // Look at opponent
+                    playerAI.SetTarget(currentTarget); // Ensure player knows which target to attack
 
                     if (action == "Shoot")
                     {
-                        animator.SetTrigger("Shoot");
-                        enemyAI.Shoot(); // Call Shoot from EnemyAI
+                        playerAI.Shoot(); // Player shoots at the selected target
                     }
                     else if (action == "Shield")
                     {
-                        enemyAI.CreateShield(); // Call CreateShield from EnemyAI
+                        playerAI.CreateShield(); // Player activates shield
+                    }
+                    else
+                    {
+                        Debug.Log("No valid action detected.");
                     }
                 }
             }
@@ -83,13 +100,15 @@ public class AI_actions : MonoBehaviour
         }
     }
 
-    private GameObject GetCharacterByColor(string color)
+    private GameObject GetTargetByName(string targetName)
     {
-        if (color == "BlueColor")
-            return Wolf;
-        else if (color == "RedColor")
-            return Wolf2;
-        return null;
+        if (targetName == "Enemy1")
+            return target1;
+        else if (targetName == "Enemy2")
+            return target2;
+
+        Debug.Log("No valid target detected, using default.");
+        return target1; // Default to target1 if no match
     }
 
     public void CancelRequests()
@@ -119,4 +138,3 @@ public class AI_actions : MonoBehaviour
         onInputFieldSubmit(message); // Calls the same function as text input
     }
 }
-

@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{DD70D361-D295-A907-A4A3-58F6A2E0295D}</ProjectGuid>
+    <ProjectGuid>{F28A6B77-B338-2684-3774-69031AD24BC4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -81,9 +81,12 @@
     <Compile Include="Assets\_AI Integration using API\Basics\JSON\JSONBasics.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\LLMUnity\Samples\ChatBot\Bubble.cs" />
+    <Compile Include="Assets\PlayerMovment.cs" />
     <Compile Include="Assets\AI\Day04\JasonPicker.cs" />
+    <Compile Include="Assets\AI\FinalProject\Scripts\PlayerAI.cs" />
     <Compile Include="Assets\LLMUnity\Samples\ChatBot\ChatBot.cs" />
     <Compile Include="Assets\_AI Integration using API\Local\FunctionCall\ColorFunctions.cs" />
+    <Compile Include="Assets\AI\FinalProject\Scripts\Projectile.cs" />
     <Compile Include="Assets\_AI Integration using API\API\Gemini\GeminiAPI.cs" />
     <Compile Include="Assets\AI\Task\scripts\SpeechRecognitionTest.cs" />
     <Compile Include="Assets\LLMUnity\Samples\RAG\RAGAndLLM_Sample.cs" />
@@ -93,35 +96,72 @@
     <Compile Include="Assets\LLMUnity\Samples\SimpleInteraction\SimpleInteraction.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\StreamingAssets\undreamai-v1.2.3-llamacpp\linux-hip\llama.cpp.LICENSE.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
+    <None Include="Assets\StreamingAssets\undreamai-v1.2.3-llamacpp\windows-avx512\llama.cpp.LICENSE.txt" />
+    <None Include="Assets\StreamingAssets\undreamai-v1.2.3-llamacpp\windows-cuda-cu12.2.0\llama.cpp.LICENSE.txt" />
+    <None Include="Assets\StreamingAssets\undreamai-v1.2.3-llamacpp\linux-vulkan\llama.cpp.LICENSE.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile-2-Pass.shader" />
+    <None Include="Assets\StreamingAssets\undreamai-v1.2.3-llamacpp\windows-cuda-cu12.2.0-full\llama.cpp.LICENSE.txt" />
+    <None Include="Assets\StreamingAssets\undreamai-v1.2.3-llamacpp\windows-cuda-cu12.2.0\llamafile.LICENSE.txt" />
+    <None Include="Assets\StreamingAssets\undreamai-v1.2.3-llamacpp\windows-cuda-cu12.2.0-full\cudart64_12.dll" />
+    <None Include="Assets\StreamingAssets\undreamai-v1.2.3-llamacpp\linux-avx2\llama.cpp.LICENSE.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\StreamingAssets\undreamai-v1.2.3-llamacpp\android\llama.cpp.LICENSE.txt" />
+    <None Include="Assets\StreamingAssets\undreamai-v1.2.3-llamacpp\windows-hip\llama.cpp.LICENSE.txt" />
+    <None Include="Assets\StreamingAssets\undreamai-v1.2.3-llamacpp\windows-noavx\undreamai_windows-noavx.dll" />
+    <None Include="Assets\StreamingAssets\undreamai-v1.2.3-llamacpp\linux-cuda-cu12.2.0\llamafile.LICENSE.txt" />
+    <None Include="Assets\StreamingAssets\undreamai-v1.2.3-llamacpp\windows-noavx\llama.cpp.LICENSE.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+    <None Include="Assets\StreamingAssets\undreamai-v1.2.3-llamacpp\windows-cuda-cu12.2.0-full\undreamai_windows-cuda-cu12.2.0-full.dll" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\LLMUnity\Samples\RAG\hamlet_project_gutenberg.txt" />
+    <None Include="Assets\StreamingAssets\undreamai-v1.2.3-llamacpp\windows-vulkan\undreamai_windows-vulkan.dll" />
+    <None Include="Assets\StreamingAssets\undreamai-v1.2.3-llamacpp\windows-avx2\undreamai_windows-avx2.dll" />
     <None Include="Assets\Packages\Newtonsoft.Json.13.0.3\lib\netstandard2.0\Newtonsoft.Json.dll" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\StreamingAssets\undreamai-v1.2.3-llamacpp\windows-cuda-cu12.2.0-full\cublas64_12.dll" />
+    <None Include="Assets\StreamingAssets\undreamai-v1.2.3-llamacpp\windows-avx2\llama.cpp.LICENSE.txt" />
+    <None Include="Assets\StreamingAssets\undreamai-v1.2.3-llamacpp\windows-hip\undreamai_windows-hip.dll" />
     <None Include="Assets\TextMesh Pro\Shaders\SDFFunctions.hlsl" />
+    <None Include="Assets\StreamingAssets\undreamai-v1.2.3-llamacpp\windows-avx\undreamai_windows-avx.dll" />
+    <None Include="Assets\StreamingAssets\undreamai-v1.2.3-llamacpp\ios\llama.cpp.LICENSE.txt" />
+    <None Include="Assets\StreamingAssets\undreamai-v1.2.3-llamacpp\windows-cuda-cu12.2.0\undreamai_windows-cuda-cu12.2.0.dll" />
+    <None Include="Assets\StreamingAssets\undreamai-v1.2.3-llamacpp\macos-arm64-acc\llama.cpp.LICENSE.txt" />
     <None Include="Assets\_AI Integration using API\API\Gemini\GeminiTask.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\DiverseSpace\Diverse Space Skybox Readme.txt" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\StreamingAssets\undreamai-v1.2.3-llamacpp\linux-cuda-cu12.2.0-full\llama.cpp.LICENSE.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\StreamingAssets\undreamai-v1.2.3-llamacpp\linux-cuda-cu12.2.0\llama.cpp.LICENSE.txt" />
     <None Include="Assets\LLMUnity\Resources\usearch\windows\libusearch_c.dll" />
+    <None Include="Assets\StreamingAssets\undreamai-v1.2.3-llamacpp\windows-vulkan\llama.cpp.LICENSE.txt" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\StreamingAssets\undreamai-v1.2.3-llamacpp\windows-archchecker\archchecker.dll" />
     <None Include="Assets\Packages\Newtonsoft.Json.13.0.3\lib\netstandard2.0\Newtonsoft.Json.xml" />
     <None Include="Assets\AI\ArbFonts-calligraphy-eid102-2\license.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\StreamingAssets\undreamai-v1.2.3-llamacpp\macos-x64-acc\llama.cpp.LICENSE.txt" />
+    <None Include="Assets\StreamingAssets\undreamai-v1.2.3-llamacpp\linux-avx512\llama.cpp.LICENSE.txt" />
+    <None Include="Assets\StreamingAssets\undreamai-v1.2.3-llamacpp\windows-cuda-cu12.2.0-full\cublasLt64_12.dll" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\StreamingAssets\undreamai-v1.2.3-llamacpp\linux-noavx\llama.cpp.LICENSE.txt" />
+    <None Include="Assets\StreamingAssets\undreamai-v1.2.3-llamacpp\linux-avx\llama.cpp.LICENSE.txt" />
+    <None Include="Assets\StreamingAssets\undreamai-v1.2.3-llamacpp\windows-avx\llama.cpp.LICENSE.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\StreamingAssets\undreamai-v1.2.3-llamacpp\macos-arm64-no_acc\llama.cpp.LICENSE.txt" />
+    <None Include="Assets\StreamingAssets\undreamai-v1.2.3-llamacpp\windows-vulkan\vulkan-1.dll" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\StreamingAssets\undreamai-v1.2.3-llamacpp\windows-avx512\undreamai_windows-avx512.dll" />
+    <None Include="Assets\StreamingAssets\undreamai-v1.2.3-llamacpp\macos-x64-no_acc\llama.cpp.LICENSE.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
   </ItemGroup>
   <ItemGroup>
@@ -1320,15 +1360,15 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Cloud.Unum.USearch.csproj">
-      <Project>{D052AD14-F328-D4C8-F4DB-B4AD0CF24D6E}</Project>
+      <Project>{C81CDD8B-C5BD-EF1E-944E-2726817AD54C}</Project>
       <Name>Cloud.Unum.USearch</Name>
     </ProjectReference>
     <ProjectReference Include="undream.llmunity.Editor.csproj">
-      <Project>{9BFB5129-E842-AC1B-ACD3-31C2AD5A28F1}</Project>
+      <Project>{05C6FF44-8312-FBBE-0ECF-64A8E138702C}</Project>
       <Name>undream.llmunity.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="undream.llmunity.Runtime.csproj">
-      <Project>{660D8FFB-2C76-C1C6-A6B2-39E73A02A5F1}</Project>
+      <Project>{5C8FD4A7-B0B2-AF15-7063-304A5908DFE7}</Project>
       <Name>undream.llmunity.Runtime</Name>
     </ProjectReference>
   </ItemGroup>

@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\The_Wedding_Crashers\\AI_One\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F28A6B77-B338-2684-3774-69031AD24BC4}|Assembly-CSharp.csproj|C:\\Users\\User\\source\\repos\\The_Wedding_Crashers\\AI_One\\assets\\ai\\finalproject\\scripts\\enemyai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F28A6B77-B338-2684-3774-69031AD24BC4}|Assembly-CSharp.csproj|solutionrelative:assets\\ai\\finalproject\\scripts\\enemyai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F28A6B77-B338-2684-3774-69031AD24BC4}|Assembly-CSharp.csproj|C:\\Users\\User\\source\\repos\\The_Wedding_Crashers\\AI_One\\assets\\ai\\task\\scripts\\speechrecognitiontest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F28A6B77-B338-2684-3774-69031AD24BC4}|Assembly-CSharp.csproj|solutionrelative:assets\\ai\\task\\scripts\\speechrecognitiontest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F28A6B77-B338-2684-3774-69031AD24BC4}|Assembly-CSharp.csproj|C:\\Users\\User\\source\\repos\\The_Wedding_Crashers\\AI_One\\assets\\ai\\finalproject\\scripts\\speechtotext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F28A6B77-B338-2684-3774-69031AD24BC4}|Assembly-CSharp.csproj|solutionrelative:assets\\ai\\finalproject\\scripts\\speechtotext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F28A6B77-B338-2684-3774-69031AD24BC4}|Assembly-CSharp.csproj|C:\\Users\\User\\source\\repos\\The_Wedding_Crashers\\AI_One\\assets\\ai\\finalproject\\scripts\\ai_actions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F28A6B77-B338-2684-3774-69031AD24BC4}|Assembly-CSharp.csproj|solutionrelative:assets\\ai\\finalproject\\scripts\\ai_actions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F28A6B77-B338-2684-3774-69031AD24BC4}|Assembly-CSharp.csproj|C:\\Users\\User\\source\\repos\\The_Wedding_Crashers\\AI_One\\assets\\ai\\finalproject\\scripts\\playerai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F28A6B77-B338-2684-3774-69031AD24BC4}|Assembly-CSharp.csproj|solutionrelative:assets\\ai\\finalproject\\scripts\\playerai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F28A6B77-B338-2684-3774-69031AD24BC4}|Assembly-CSharp.csproj|c:\\users\\user\\source\\repos\\the_wedding_crashers\\ai_one\\assets\\ai\\finalproject\\scripts\\projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F28A6B77-B338-2684-3774-69031AD24BC4}|Assembly-CSharp.csproj|solutionrelative:assets\\ai\\finalproject\\scripts\\projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Projectile.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\The_Wedding_Crashers\\AI_One\\Assets\\AI\\FinalProject\\Scripts\\Projectile.cs",
+              "RelativeDocumentMoniker": "Assets\\AI\\FinalProject\\Scripts\\Projectile.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\The_Wedding_Crashers\\AI_One\\Assets\\AI\\FinalProject\\Scripts\\Projectile.cs",
+              "RelativeToolTip": "Assets\\AI\\FinalProject\\Scripts\\Projectile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T17:27:53.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PlayerAI.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\The_Wedding_Crashers\\AI_One\\Assets\\AI\\FinalProject\\Scripts\\PlayerAI.cs",
+              "RelativeDocumentMoniker": "Assets\\AI\\FinalProject\\Scripts\\PlayerAI.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\The_Wedding_Crashers\\AI_One\\Assets\\AI\\FinalProject\\Scripts\\PlayerAI.cs",
+              "RelativeToolTip": "Assets\\AI\\FinalProject\\Scripts\\PlayerAI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T15:37:08.436Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AI_actions.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\The_Wedding_Crashers\\AI_One\\Assets\\AI\\FinalProject\\Scripts\\AI_actions.cs",
+              "RelativeDocumentMoniker": "Assets\\AI\\FinalProject\\Scripts\\AI_actions.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\The_Wedding_Crashers\\AI_One\\Assets\\AI\\FinalProject\\Scripts\\AI_actions.cs",
+              "RelativeToolTip": "Assets\\AI\\FinalProject\\Scripts\\AI_actions.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAAwDwAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T23:15:00.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SpeechToText.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\The_Wedding_Crashers\\AI_One\\Assets\\AI\\FinalProject\\Scripts\\SpeechToText.cs",
+              "RelativeDocumentMoniker": "Assets\\AI\\FinalProject\\Scripts\\SpeechToText.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\The_Wedding_Crashers\\AI_One\\Assets\\AI\\FinalProject\\Scripts\\SpeechToText.cs",
+              "RelativeToolTip": "Assets\\AI\\FinalProject\\Scripts\\SpeechToText.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAAwEsAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T12:56:23.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SpeechRecognitionTest.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\The_Wedding_Crashers\\AI_One\\Assets\\AI\\Task\\scripts\\SpeechRecognitionTest.cs",
+              "RelativeDocumentMoniker": "Assets\\AI\\Task\\scripts\\SpeechRecognitionTest.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\The_Wedding_Crashers\\AI_One\\Assets\\AI\\Task\\scripts\\SpeechRecognitionTest.cs",
+              "RelativeToolTip": "Assets\\AI\\Task\\scripts\\SpeechRecognitionTest.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAYwFAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T12:29:42.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EnemyAI.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\The_Wedding_Crashers\\AI_One\\Assets\\AI\\FinalProject\\Scripts\\EnemyAI.cs",
+              "RelativeDocumentMoniker": "Assets\\AI\\FinalProject\\Scripts\\EnemyAI.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\The_Wedding_Crashers\\AI_One\\Assets\\AI\\FinalProject\\Scripts\\EnemyAI.cs",
+              "RelativeToolTip": "Assets\\AI\\FinalProject\\Scripts\\EnemyAI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T23:39:59.151Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

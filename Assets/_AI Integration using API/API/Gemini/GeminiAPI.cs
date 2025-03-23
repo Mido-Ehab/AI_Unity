@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Newtonsoft.Json.Linq;
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 
 // This class handles communication with the Gemini API for generating content based on user prompts.
 public class GeminiAPI : MonoBehaviour
@@ -27,9 +28,9 @@ public class GeminiAPI : MonoBehaviour
     // Serialized fields to allow configuration in the Unity Inspector
     [SerializeField] private string _modelName = "gemini-2.0-flash"; // Name of the model to use
     [SerializeField] private string _apiKey; // API key for authentication
-    [SerializeField] private InputField _promptInputField; // Input field for user prompts
+    [SerializeField] private TMP_InputField _promptInputField;  // Input field for user prompts
     [SerializeField] private Button _sendButton; // Button to send the prompt
-    [SerializeField] private Text _responseText; // Text field to display the response
+    [SerializeField] private TMP_Text _responseText; // Text field to display the response
     [SerializeField, TextArea(3, 10)] private string _systemInstructions; // Instructions for the system
     [SerializeField] private ResponseMimeType _responseMimeType = ResponseMimeType.Json; // Expected response type
     [SerializeField] private bool _enableChatHistory = true; // Flag to enable chat history

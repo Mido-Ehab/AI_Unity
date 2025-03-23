@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{9BFB5129-E842-AC1B-ACD3-31C2AD5A28F1}</ProjectGuid>
+    <ProjectGuid>{05C6FF44-8312-FBBE-0ECF-64A8E138702C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>undream.llmunity.Editor</AssemblyName>
@@ -1133,7 +1133,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="undream.llmunity.Runtime.csproj">
-      <Project>{660D8FFB-2C76-C1C6-A6B2-39E73A02A5F1}</Project>
+      <Project>{5C8FD4A7-B0B2-AF15-7063-304A5908DFE7}</Project>
       <Name>undream.llmunity.Runtime</Name>
     </ProjectReference>
   </ItemGroup>
